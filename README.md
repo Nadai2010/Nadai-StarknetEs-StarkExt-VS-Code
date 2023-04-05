@@ -1,4 +1,4 @@
-# StarkEx
+# StarkExt
 
 Un plugin de Vscode para la **Comunidad de Desarrolladores de [Starknet](https://www.starknet.io/en)** en el que los desarrolladores de contratos inteligentes pueden realizar las siguientes funciones:
 
@@ -10,11 +10,11 @@ Descargue el archivo vsix de nuestra versión [interna](https://github.com/7finn
 
 - Crear cuenta
 - Desplegar cuenta
-- Compilar contratos inteligentes cairo
-- Declarar contratos inteligentes cairo
-- Desplegar contratos inteligentes de cairo
-- Interacción con los contratos inteligentes de cairo
-- Instrucciones de uso de Starkex
+- Compilar contratos inteligentes Cairo
+- Declarar contratos inteligentes Cairo
+- Desplegar contratos inteligentes de Cairo
+- Interacción con los contratos inteligentes de Cairo
+- Instrucciones de uso de StarkExt
 - Creación de cuentas
 
 # Instrucciones de uso de Starkex
@@ -27,7 +27,7 @@ Descargue el archivo vsix de nuestra versión [interna](https://github.com/7finn
 ![contract-deploy-and-interaction](https://user-images.githubusercontent.com/9979182/229073433-3f6b4c7c-48dd-414b-bbe5-c52f03764a0d.gif)
 
 
-1. **activar extensión starkex:** 
+1. **Activar extensión starkex:** 
     - Una nueva carpeta con el título `starkex` generar en el directorio de trabajo actual para almacenar los registros de contratos.
     
 2. **Seleccionar red starknet:**
@@ -43,13 +43,13 @@ Descargue el archivo vsix de nuestra versión [interna](https://github.com/7finn
     - Seleccione una cuenta desplegada en la cadena para la interacción del contrato.
     - Las cuentas desplegadas en la cadena se utilizan para la interacción del contrato.
 7. **Seleccionar contrato de Cairo:**
-    - Seleccione un contrato cairo compilado.
+    - Seleccione un contrato Cairo compilado.
     - El archivo .json debe estar presente en el directorio raíz del proyecto.
     - Después de seleccionar el contacto se generará una carpeta con dos archivos en la carpeta starkex.
         - `starkex/fileName/fileName_address.json` almacena la dirección y la información classHash del contrato cairo.
         - `starkex/fileName/fileName_abi.json` contiene abi del contrato de El Cairo seleccionado para la interacción con el contrato.
 8. **Declare contrato de Cairo:**
-    - Declarar el contrato de El Cairo seleccionado en la cadena. (**Nota:** antes de declarar y desplegar el contrato, el classHash del contrato seleccionado debe estar presente en el campo `starkex/fileName/fileName_address.json.` classHash.
+    - Declarar el contrato de Cairo seleccionado en la cadena. (**Nota:** antes de declarar y desplegar el contrato, el classHash del contrato seleccionado debe estar presente en el campo `starkex/fileName/fileName_address.json.` classHash.
 9. **Despliegue un contrato de Cairo**
     - Despliega el contrato cairo seleccionado en la cadena.
     - Pegar la dirección del contrato desplegado en el campo address del fichero `starkex/fileName/fileName_address.json.`.
