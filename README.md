@@ -27,13 +27,12 @@ Descargue el archivo vsix de nuestra versión [interna](https://github.com/7finn
 ![contract-deploy-and-interaction](https://user-images.githubusercontent.com/9979182/229073433-3f6b4c7c-48dd-414b-bbe5-c52f03764a0d.gif)
 
 
-1. **Activar extensión starkex:** 
-
-    - Una nueva carpeta con el título `starkex` generar en el directorio de trabajo actual para almacenar los registros de contratos. 
+1. **activar extensión starkex:** 
+    - Una nueva carpeta con el título `starkex` generar en el directorio de trabajo actual para almacenar los registros de contratos.
     
 2. **Seleccionar red starknet:**
-    - Actualmente, la extensión sólo soporta la red `goerli-alpha`. **(sólo seleccionar red `goerli-alpha` para ejecución de contratos)**.
-3.**Crear nueva cuenta starkex:**
+    - Actualmente, la extensión sólo soporta la red `goerli-alpha`. **(seleccionar únicamente la red `goerli-alpha` para la ejecución de contratos)**.
+3. **Crear nueva cuenta starkex:**
     - Crea una nueva cuenta no desplegada para la interacción con el contrato.
     - Utiliza los estándares de cuentas de openzeppelin.
 4. **Seleccionar cuenta starkex no desplegada:**
@@ -42,16 +41,16 @@ Descargue el archivo vsix de nuestra versión [interna](https://github.com/7finn
     - Desplegar la cuenta no desplegada seleccionada en la cadena.
 6. **Seleccionar cuenta starkex:**
     - Seleccione una cuenta desplegada en la cadena para la interacción del contrato.
-    - Las cuentas desplegadas en la cadena se utilizan para la interacción de contratos.
-7. **Seleccionar contrato cairo:**
-    - Seleccione el contrato cairo compilado.
+    - Las cuentas desplegadas en la cadena se utilizan para la interacción del contrato.
+7. **Seleccionar contrato de Cairo:**
+    - Seleccione un contrato cairo compilado.
     - El archivo .json debe estar presente en el directorio raíz del proyecto.
     - Después de seleccionar el contacto se generará una carpeta con dos archivos en la carpeta starkex.
-        - starkex/fileName/fileName_address.json` almacena la dirección y la información classHash del contrato Cairo.
+        - `starkex/fileName/fileName_address.json` almacena la dirección y la información classHash del contrato cairo.
         - `starkex/fileName/fileName_abi.json` contiene abi del contrato de El Cairo seleccionado para la interacción con el contrato.
-8. **Declare cairo contract:**
-    - Declarar el contrato de Cairo seleccionado en la cadena. (**Nota:** antes de declarar y desplegar el contrato, el classHash del contrato seleccionado debe estar presente en el campo `starkex/fileName/fileName_address.json.` classHash.
-9. **9. Despliegue del contrato cairo
+8. **Declare contrato de Cairo:**
+    - Declarar el contrato de El Cairo seleccionado en la cadena. (**Nota:** antes de declarar y desplegar el contrato, el classHash del contrato seleccionado debe estar presente en el campo `starkex/fileName/fileName_address.json.` classHash.
+9. **Despliegue un contrato de Cairo**
     - Despliega el contrato cairo seleccionado en la cadena.
     - Pegar la dirección del contrato desplegado en el campo address del fichero `starkex/fileName/fileName_address.json.`.
 10. **Llamar método de contacto:**
@@ -121,6 +120,8 @@ Antes de desplegar un contrato, debemos configurar la cuenta de deployer en la e
 
 
 Ahora si podremos proceder a desplegar nuestra cuenta con el comando ` Starknet: Deploy starkex new account`, la cuál podrá comprobar que se ha desplegado una vez aceptada y como su balance se ha consumido.
+
+![Graph](imágenes/deploynew.png)
 
 ![Graph](imágenes/deployaccount.png)
 
