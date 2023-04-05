@@ -27,8 +27,10 @@ Descargue el archivo vsix de nuestra versión [interna](https://github.com/7finn
 ![contract-deploy-and-interaction](https://user-images.githubusercontent.com/9979182/229073433-3f6b4c7c-48dd-414b-bbe5-c52f03764a0d.gif)
 
 
-1. **activar extensión starkex:** 
-    - Una nueva carpeta con el título `starkex` generar en el directorio de trabajo actual para almacenar los registros de contratos.    
+1. **Activar extensión starkex:** 
+
+    - Una nueva carpeta con el título `starkex` generar en el directorio de trabajo actual para almacenar los registros de contratos. 
+    
 2. **Seleccionar red starknet:**
     - Actualmente, la extensión sólo soporta la red `goerli-alpha`. **(sólo seleccionar red `goerli-alpha` para ejecución de contratos)**.
 3.**Crear nueva cuenta starkex:**
