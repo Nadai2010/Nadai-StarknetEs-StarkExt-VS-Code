@@ -1,6 +1,6 @@
 # StarkExt
 
-Un plugin de Vscode para la **Comunidad de Desarrolladores de [Starknet](https://www.starknet.io/en)** en el que los desarrolladores de contratos inteligentes pueden realizar las siguientes funciones:
+Un plugin de Vscode para la **Comunidad de Desarrolladores de [Starknet](https://www.starknet.io/en)** con el que pueden realizar las siguientes funciones:
 
 ## Instalación
 
@@ -63,7 +63,7 @@ Descargue el archivo vsix de nuestra versión [interna](https://github.com/7finn
 
 ## Tutorial StarknetEs
 
-Primero clonarmos el repositorio en el que se encutran todos los archiuvos de la extension neceraios para el tutorial.  Para hacer esto, abrimos la terminal y escribimos el siguiente comando:
+Primero clonamos el repositorio en el que se encutran todos los archiuvos de la extensión necesarios para el tutorial.  Para hacer esto, abrimos la terminal y escribimos el siguiente comando:
 
 ```bash
 gh repo clone 7finney/starkex
@@ -106,7 +106,7 @@ Ahora si procederemos hacer un envío de 0.02 de eth para que se despliegue la c
 
 ![Graph](imágenes/send.png)
 
-En caso de error al hacer el envío puede ser debido a la falta de un numero que no detectó `Argent` en este tutorial asi que añadir un `0` a continuación de `x` quedando `0x0XXXXX`. (Braavos no tuvimos problemas). Puede revisar su balance enla cuenta que vamos aa desplegar
+En caso de error al hacer el envío, puede ser debido a la falta de un numero que no detectó `Argent` en este tutorial asi que añadir un `0` a continuación de `x` quedando `0x0XXXXX`. (En Braavos no tuvimos problemas). Puede revisar su balance en la cuenta que vamos a desplegar
 
 ![Graph](imágenes/balance.png)
 
@@ -119,7 +119,7 @@ Antes de desplegar un contrato, debemos configurar la cuenta de deployer en la e
 ![Graph](imágenes/selected1.png)
 
 
-Ahora si podremos proceder a desplegar nuestra cuenta con el comando ` Starknet: Deploy starkex new account`, la cuál podrá comprobar que se ha desplegado una vez aceptada y como su balance se ha consumido.
+Ahora si podremos proceder a desplegar nuestra cuenta con el comando ` Starknet: Deploy starkex new account`, la cual podrá comprobar que se ha desplegado una vez aceptada y como su balance se ha consumido.
 
 ![Graph](imágenes/deploynew.png)
 
@@ -131,7 +131,7 @@ Ahora si podremos proceder a desplegar nuestra cuenta con el comando ` Starknet:
 
 Luego podemos revisar el [Hash](https://testnet.starkscan.co/tx/0x078240a59019727f2e8fa4edb03578ff45ab37cd93282e1382f02af2655a5d4f)
 
-Veremos que el saldo se ha consumido y se ha deployado un contrato de cuenta de OZ en la que podra revisar su implemetación.
+Veremos que el saldo se ha consumido y se ha deployado un contrato de cuenta de OZ en la que podrá revisar su implemetación.
 
 ![Graph](imágenes/Deploy.png)
 
