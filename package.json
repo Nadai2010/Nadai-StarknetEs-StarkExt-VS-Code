@@ -1,0 +1,91 @@
+{
+  "name": "Starkex",
+  "displayName": "Starkex",
+  "description": "Extension for execution of contracts written in cairo.",
+  "version": "0.0.1",
+  "publisher": "Aniket6990",
+  "repository": "https://github.com/Aniket6990/stark-extension.git",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "activationEvents": [
+    "onCommand: starknet.activate"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "starknet.activate",
+        "title": "activate Starkex extension",
+        "category": "Starknet"
+      },
+      {
+        "command": "starknet.selectnetwork",
+        "title": "Select starknet network",
+        "category": "Starknet"
+      },
+      {
+        "command": "starknet.createaccount",
+        "title": "Create starkex new account",
+        "category": "Starknet"
+      },
+      {
+        "command": "starknet.unDeployedAccount",
+        "title": "Select starkex undeployed account",
+        "category": "Starknet"
+      },
+      {
+        "command": "starknet.deployaccount",
+        "title": "Deploy starkex new account",
+        "category": "Starknet"
+      },
+      {
+        "command": "starknet.selectaccount",
+        "title": "Select starkex account",
+        "category": "Starknet"
+      },
+      {
+        "command": "starknet.selectContract",
+        "title": "Select cairo contract",
+        "category": "Starknet"
+      },
+      {
+        "command": "starknet.declareContract",
+        "title": "Declare cairo contract",
+        "category": "Starknet"
+      },
+      {
+        "command": "starknet.deployContract",
+        "title": "Deploy cairo contract",
+        "category": "Starknet"
+      },
+      {
+        "command": "starknet.callFunction",
+        "title": "Call contact method",
+        "category": "Starknet"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "npm run compile",
+    "compile": "tsc -p ./",
+    "lint": "eslint \"src/**/*.ts\"",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.7",
+    "@types/vscode": "^1.73.0",
+    "@typescript-eslint/eslint-plugin": "^5.42.0",
+    "@typescript-eslint/parser": "^5.42.0",
+    "eslint": "^8.26.0",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@types/bn.js": "^5.1.1",
+    "@types/elliptic": "^6.4.14",
+    "starknet": "^4.22.0"
+  }
+}

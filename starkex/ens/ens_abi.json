@@ -1,0 +1,1 @@
+[{"inputs":[{"name":"_name","type":"felt","value":""}],"name":"store_name","outputs":[],"type":"function"},{"inputs":[{"name":"_address","type":"felt","value":""}],"name":"get_name","outputs":[{"name":"name","type":"felt"}],"stateMutability":"view","type":"function"}]
